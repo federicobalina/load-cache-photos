@@ -16,3 +16,7 @@ load_images(picture_store)
 def search_images(search_term):
     pictures = search_for_pictures(search_term, picture_store)
     return {"pictures": picture_schema.dump(pictures, many=True)}, 200
+
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0')

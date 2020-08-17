@@ -96,4 +96,4 @@ class PictureStore:
 		self.pictures.replace_one({'id': picture_json['id']}, picture_json, upsert=True)
 
 	def get_all_pictures(self):
-		return [pic for pic in self.pictures.find()]
+		return self.pictures.find()
