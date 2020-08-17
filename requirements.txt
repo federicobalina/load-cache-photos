@@ -1,0 +1,6 @@
+flask
+celery
+pymongo
+requests
+marshmallow
+dnspython
